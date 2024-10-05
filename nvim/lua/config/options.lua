@@ -10,3 +10,9 @@ vim.opt.expandtab = true -- Convert tabs to spaces
 -- Enable numbered lines
 vim.opt.number = true
 vim.opt.relativenumber = true -- Optional: relative numbers
+
+-- Set the leader key to space
+vim.g.mapleader = " "
+
+-- Enable 24-bit RGB colors
+vim.opt.termguicolors = true
