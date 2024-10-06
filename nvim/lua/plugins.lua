@@ -28,7 +28,11 @@ return {
           group_empty = true,
         },
         filters = {
-          dotfiles = true,
+          dotfiles = false,
+        },
+        -- show git ignored files
+        git = {
+          enable = false,
         },
         on_attach = on_attach,
       })
@@ -50,7 +54,6 @@ return {
       -- end
       --
       -- vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-
       -- Optional: Add a keymap to toggle NvimTree
       vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
     end,
