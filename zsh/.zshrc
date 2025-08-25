@@ -103,9 +103,9 @@ source $ZSH/oh-my-zsh.sh
 #zoxide
 eval "$(zoxide init zsh)"
 
-export PATH="$PATH:/home/saad/.cargo/bin"
-export PATH="$PATH:/home/saad/my_scripts"
-export PATH="$PATH:/home/saad/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/my_scripts"
+export PATH="$PATH:$HOME/.local/bin"
 
 # alias vim =nvim
 alias v=nvim
