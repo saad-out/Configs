@@ -5,7 +5,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      style = "day", -- available: "storm", "night", "moon", "day"
+      style = "night", -- available: "storm", "night", "moon", "day"
       transparent = false,
       terminal_colors = true,
     },
