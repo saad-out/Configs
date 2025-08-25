@@ -107,7 +107,7 @@ export PATH="$PATH:/home/saad/.cargo/bin"
 export PATH="$PATH:/home/saad/my_scripts"
 export PATH="$PATH:/home/saad/.local/bin"
 
-alias vim =nvim
+# alias vim =nvim
 alias v=nvim
 alias cd=z
 alias bat=batcat
