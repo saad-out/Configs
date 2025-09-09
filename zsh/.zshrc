@@ -111,3 +111,6 @@ export PATH="$PATH:$HOME/.local/bin"
 alias v=nvim
 alias cd=z
 alias bat=batcat
+alias d="docker"
+alias dc="docker-compose"
+alias blue="blueutil"
