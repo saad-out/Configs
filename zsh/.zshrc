@@ -103,9 +103,12 @@ source $ZSH/oh-my-zsh.sh
 #zoxide
 eval "$(zoxide init zsh)"
 
+# Set PATHs
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/my_scripts"
 export PATH="$PATH:$HOME/.local/bin"
+# Bluetooth devices
+export HEADPHONES_MAC_ADDRESS="28:6F:40:B1:C4:77"
 
 # alias vim =nvim
 alias v=nvim
@@ -114,3 +117,7 @@ alias bat=batcat
 alias d="docker"
 alias dc="docker-compose"
 alias blue="blueutil"
+alias pair='blueutil --pair "$HEADPHONES_MAC_ADDRESS"'
+alias connect='blueutil --connect "$HEADPHONES_MAC_ADDRESS"'
+alias unpair='blueutil --unpair "$HEADPHONES_MAC_ADDRESS"'
+alias disconnect='blueutil --disconnect "$HEADPHONES_MAC_ADDRESS"'
