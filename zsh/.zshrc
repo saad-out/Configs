@@ -121,3 +121,9 @@ alias pair='blueutil --pair "$HEADPHONES_MAC_ADDRESS"'
 alias connect='blueutil --connect "$HEADPHONES_MAC_ADDRESS"'
 alias unpair='blueutil --unpair "$HEADPHONES_MAC_ADDRESS"'
 alias disconnect='blueutil --disconnect "$HEADPHONES_MAC_ADDRESS"'
+
+export TMUX_DIR="$HOME/l3ibat/ft_transcendence/backend/"
+# start tmux session
+if [ -z "$TMUX" ]; then
+    tmux new-session -c $TMUX_DIR -A -s main
+fi
